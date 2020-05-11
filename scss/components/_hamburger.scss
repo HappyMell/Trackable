@@ -1,0 +1,64 @@
+.hamburger {
+  position: relative;
+  z-index: 50;
+  margin: 10px 18px 10px 18px;
+  width: 18px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    font-size: 0;
+    width: 18px;
+    height: 2px;
+    display: block;
+    background: #000;
+    @include transition;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      display: block;
+      background: #000;
+      content: '';
+      @include transition;
+    }
+
+    &::before {
+      top: -5px;
+    }
+
+    &::after {
+      bottom: -5px;
+    }
+  }
+
+  @include when-inside('.page-header.is-opened') {
+    span {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @include respond-to(lg) {
+    display: none;
+  }
+}

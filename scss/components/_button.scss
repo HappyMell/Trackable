@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button-register {
+  background-color: $mid-grey-purple;
+  border: none;
+  font-family: 'Rubik';
+  color: $main-color-purple;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 144px;
+  height: 40px;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: $main-color-purple;
+    color: $mid-grey-purple;
+    cursor: pointer;
+  }
+}
+
+.main-button {
+  background-color: $main-color-yellow;
+  border: none;
+  font-family: 'Rubik';
+  color: $main-color-purple;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 175px;
+  height: 46px;
+  transition-duration: 0.4s;
+  box-shadow: 0 4px 5px 3px rgba(169, 169, 174, 0.3);
+  transition: box-shadow 500ms ease, background-color 500ms ease,
+    color 500ms ease;
+
+  &:hover {
+    background-color: $main-color-purple;
+    color: $main-color-yellow;
+    box-shadow: 0 0 0 0 #ddd;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+.download {
+  padding: 0 20px;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 7vh 0;
+    max-width: 960px;
+
+    @include respond-to(md) {
+      padding: 10vh 0 10vh 0;
+    }
+
+    &--center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-family: $bold-font;
+        color: $main-color-purple;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .highlight {
+        color: $main-color-pink;
+        display: inline-block;
+        background-image: linear-gradient(
+          180deg,
+          #fff 77%,
+          $mid-grey-purple 78%
+        );
+      }
+    }
+  }
+}

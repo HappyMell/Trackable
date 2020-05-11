@@ -1,0 +1,230 @@
+.modal-dialog {
+  max-width: 800px;
+
+  .modal-content {
+    @include respond-to(sm) {
+      margin: 0 20px;
+    }
+
+    .close {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      color: $dark-grey;
+      display: flex;
+      flex-direction: row-reverse;
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .modal-body {
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+
+      @include respond-to(sm) {
+        flex-direction: row-reverse;
+      }
+
+      .modal-form {
+        padding: 4%;
+        width: 100%;
+
+        @include respond-to(sm) {
+          flex: 0 0 60%;
+        }
+
+        &__center {
+          h4 {
+            color: $main-color-purple;
+            font-family: $bold-font;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 24px;
+          }
+
+          p {
+            color: $dark-grey;
+            font-family: $main-font;
+            font-size: 18px;
+            margin-bottom: 30px;
+          }
+
+          form {
+            label {
+              color: $light-mid-grey;
+              font-size: 16px;
+              margin-bottom: 5px;
+            }
+
+            input {
+              padding: 8px 12px;
+              margin-bottom: 20px;
+              height: 50px;
+              width: 100%;
+              border: 1px solid $main-color-purple;
+            }
+
+            input[type='submit'] {
+              border: none;
+              margin-top: 15px;
+
+              @include respond-to(sm) {
+                width: 175px;
+              }
+            }
+          }
+        }
+      }
+
+      .modal-text {
+        padding: 40px 20px;
+        width: 100%;
+        background: $main-color-purple;
+
+        @include respond-to(sm) {
+          display: flex;
+          align-items: center;
+        }
+
+        &__center {
+          text-align: center;
+          h1 {
+            color: #fff;
+            font-family: $bold-font;
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 20px;
+          }
+
+          p {
+            font-family: $main-font;
+            font-size: 18px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+#registerModal {
+  .modal-dialog {
+    max-width: 800px;
+
+    .modal-content {
+      @include respond-to(sm) {
+        margin: 0 20px;
+      }
+
+      .close {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        color: $dark-grey;
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        top: 15px;
+        right: 12px;
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      .modal-body {
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include respond-to(sm) {
+          flex-direction: row;
+        }
+
+        .modal-form {
+          padding: 4%;
+          width: 100%;
+
+          @include respond-to(sm) {
+            flex: 0 0 60%;
+          }
+
+          &__center {
+            &--text {
+              text-align: center;
+            }
+            h4 {
+              color: $main-color-purple;
+              font-family: $bold-font;
+              font-weight: 700;
+              margin-bottom: 20px;
+              font-size: 24px;
+            }
+
+            p {
+              color: $dark-grey;
+              font-family: $main-font;
+              font-size: 18px;
+              margin-bottom: 30px;
+            }
+
+            form {
+              label {
+                color: $light-mid-grey;
+                font-size: 16px;
+                margin-bottom: 5px;
+              }
+
+              input {
+                padding: 8px 12px;
+                margin-bottom: 20px;
+                height: 50px;
+                width: 100%;
+                border: 1px solid $main-color-purple;
+              }
+
+              input[type='submit'] {
+                border: none;
+                margin-top: 15px;
+
+                @include respond-to(sm) {
+                  width: 175px;
+                }
+              }
+            }
+          }
+        }
+
+        .modal-text {
+          padding: 40px 20px;
+          width: 100%;
+          background: $main-color-purple;
+
+          @include respond-to(sm) {
+            display: flex;
+            align-items: center;
+          }
+
+          &__center {
+            text-align: center;
+            h1 {
+              color: #fff;
+              font-family: $bold-font;
+              font-weight: 700;
+              font-size: 35px;
+              margin-bottom: 20px;
+            }
+
+            p {
+              font-family: $main-font;
+              font-size: 18px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
